@@ -22,7 +22,7 @@ jobs:
 
     # NEW STEP: This generates the missing 'gradlew' file automatically
     - name: Generate Gradle Wrapper
-      run: gradle wrapper
+      run: gradle wrapper --gradle-version 8.2
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
